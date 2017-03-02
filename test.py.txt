@@ -1,0 +1,51 @@
+'''
+
+Jacob Corbley
+Random Project
+
+'''
+
+''''''''''''''''''''''''''''''''''''''''''''''''
+
+import time as t
+import sys as s
+import math as m
+import random as r
+
+''''''''''''''''''''''''''''''''''''''''''''''''
+
+def sleepMin( x ):
+	t.sleep( x * 60 )
+def rand( x, y ):
+	r.randInt( x, y )
+def menu( x ):
+	if x == 1:
+		print( "%12s" % ( "Menu" ) )
+		print( "1) Calculator\n" )
+		
+		selection = int( input( "Enter your selection here: " ) )
+	else:
+		lineRet( 2 )
+		
+		print( "Invalid Selection." )
+		t.sleep( 2 )
+		
+		exit( )
+def lineRet( x ):
+	if x == 1:
+		print( " " )
+	elif x < 1:
+		print( "DevNote: lineRet( x ) fail. (lineRet x < 1)")
+		t.sleep( 1 )
+		print( "Exiting..." )
+		t.sleep( 2 )
+		exit( )
+	else:
+		print( "\n" * x )
+
+''''''''''''''''''''''''''''''''''''''''''''''''
+
+print( "Just a random project." )
+lineRet( 1 )
+
+menu( 1 )
