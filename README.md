@@ -1,3 +1,5 @@
 # Python-School
 
-* nothing's here yet *
+* nothing's here yet 
+* more coming soon
+- o
